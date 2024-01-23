@@ -1,0 +1,33 @@
+.container{
+    background-color: rgb(0, 255, 247);
+    min-height: 200px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    height: 200px;
+    width: 49%;
+    background: red;
+}
+
+.right{
+    width: 49%;
+    height: 200px;
+    background: green;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+       flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
+
